@@ -9,7 +9,7 @@
 	// You can edit these settings after create using File > Preferences > Settings > Remote.
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash",
-		"go.gopath": "/workspace/monkey",
+		"go.gopath": "/go",
 		"go.useLanguageServer": true
 	},
 	
@@ -27,6 +27,7 @@
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [
-		"ms-vscode.go"
+		"ms-vscode.go",
+		"docker"
 	]
 }
