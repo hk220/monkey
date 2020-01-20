@@ -3,10 +3,10 @@ package lexer
 import "github.com/hk220/monkey/token"
 
 type Lexer struct {
-	input string
-	position int // 入力における現在の位置（現在の文字を指し示す）
+	input        string
+	position     int // 入力における現在の位置（現在の文字を指し示す）
 	readPosition int // これから読み込む位置（現在の文字の次）
-	ch byte
+	ch           byte
 }
 
 func New(input string) *Lexer {
@@ -96,7 +96,7 @@ func (l *Lexer) NextToken() token.Token {
 
 func newToken(tokenType token.TokenType, ch byte) token.Token {
 	return token.Token{Type: tokenType, Literal: string(ch)}
-} 
+}
 
 func (l *Lexer) readIdentifier() string {
 	position := l.position
