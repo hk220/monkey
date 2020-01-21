@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/hk220/monkey/ast"
-	"github.com/hk220/monkey/lexer"
-	"github.com/hk220/monkey/token"
+	"monkey/ast"
+	"monkey/lexer"
+	"monkey/token"
 )
 
 type (

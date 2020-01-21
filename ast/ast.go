@@ -3,7 +3,7 @@ package ast
 import (
 	"bytes"
 
-	"github.com/hk220/monkey/token"
+	"monkey/token"
 )
 
 type Node interface {
