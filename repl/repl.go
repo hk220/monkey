@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"monkey/lexer"
 	"monkey/evaluator"
+	"monkey/lexer"
 	"monkey/parser"
 )
 
