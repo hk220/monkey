@@ -232,13 +232,11 @@ if (10 > 1) {
 
 		errObj, ok := evaluated.(*object.Error)
 		if !ok {
-			t.Errorf(tt.input)
 			t.Errorf("no error object returned. got=%T(%+v)", evaluated, evaluated)
 			continue
 		}
 
 		if errObj.Message != tt.expectedMessage {
-			t.Errorf(tt.input)
 			t.Errorf("wrong error message. expected=%q, got=%q", tt.expectedMessage, errObj.Message)
 		}
 	}
